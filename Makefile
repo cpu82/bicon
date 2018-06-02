@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfribidi.so:converters/fribidi
 
-USES=		autoreconf libtool pkgconfig shebangfix
+USES=		autoreconf libtool pathfix pkgconfig shebangfix
 SHEBANG_FILES=	bin/bicon.in \
 		font/bicon-bdf2psf.pl
 USE_LDCONFIG=	yes

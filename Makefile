@@ -3,10 +3,10 @@
 
 PORTNAME=	bicon
 PORTVERSION=	0.5
-CATEGORIES=	x11
+CATEGORIES=	shells
 
 MAINTAINER=	cpm@FreeBSD.org
-COMMENT=	Bidirectional console
+COMMENT=	Bidirectional text console
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
@@ -14,7 +14,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libfribidi.so:converters/fribidi
 
 USES=		autoreconf libtool pkgconfig shebangfix
-SHEBANG_FILES=	bin/bicon.in
+SHEBANG_FILES=	bin/bicon.in \
+		font/bicon-bdf2psf.pl
 USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes
